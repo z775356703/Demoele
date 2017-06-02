@@ -23,3 +23,27 @@ npm install
 ### 编译环境
 npm run dev 浏览器自动会跳出http://localhost:8080
 
+
+### 分享 
+相信好多学习vue的小伙伴都碰到过兄弟组件通讯问题,当时这个问题也困扰我好久,百度好久都没有准确的答案,请看下面
+```
+在一个文件夹下创建一个js 文件
+例bus.js
+import Vue from 'vue'
+export default new Vue();
+
+兄弟组件A
+引入
+import import bus from '@/xxx/xxx/bus.js'
+bus.$emit('xxx',xxxxx)
+兄弟组件B
+引入
+import import bus from '@/xxx/xxx/bus.js'
+export default{
+  created() {
+       bus.$on('xxx',(data) => {
+       	    //你的逻辑
+       })
+    }
+}
+```
