@@ -4,7 +4,7 @@
 
 
 ## 技术点
-vue2.0 的 vue-cli脚手架 + vue-router + sass +axios+ element-ui + webpakc(vue-cli自动搭建好的build,以后再研究)
+vue2.0 的 vue-cli脚手架 + vue-router + sass +axios+ element-ui + webpakc(vue-cli自动搭建好的build,以后再研究)在此推荐一个UI iview
 
 
 
