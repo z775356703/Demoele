@@ -34,11 +34,11 @@ export default new Vue();
 
 兄弟组件A
 引入
-import import bus from '@/xxx/xxx/bus.js'
+import bus from '@/xxx/xxx/bus.js'
 bus.$emit('xxx',xxxxx)
 兄弟组件B
 引入
-import import bus from '@/xxx/xxx/bus.js'
+import bus from '@/xxx/xxx/bus.js'
 export default{
   created() {
        bus.$on('xxx',(data) => {
